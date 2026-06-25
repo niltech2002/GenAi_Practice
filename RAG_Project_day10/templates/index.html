@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>GenAI RAG Assistant</title>
+ 
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+ 
+        <h1>GenAI RAG Assistant</h1>
+ 
+        <!-- User Question Form -->
+        <form method="POST">
+ 
+            <input
+                type="text"
+                name="question"
+                placeholder="Enter your question..."
+                required
+            >
+ 
+            <button type="submit">
+                Submit
+            </button>
+ 
+        </form>
+ 
+        <!-- Retrieved Context -->
+        {% if context %}
+ 
+        <div class="box">
+ 
+            <h2>Retrieved Context</h2>
+ 
+            <p>{{ context }}</p>
+ 
+        </div>
+ 
+        {% endif %}
+ 
+        <!-- LLM Response -->
+        {% if answer %}
+ 
+        <div class="box">
+ 
+            <h2>LLM Response</h2>
+ 
+            <p>{{ answer }}</p>
+ 
+        </div>
+ 
+        {% endif %}
+ 
+    </div>
+ 
+</body>
+ 
+</html>

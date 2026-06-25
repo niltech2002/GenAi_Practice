@@ -1,0 +1,128 @@
+/* General Page Styling */
+ 
+body{
+ 
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    background-color:#f5f7fa;
+ 
+    margin:0;
+ 
+    padding:0;
+}
+ 
+ 
+/* Main Container */
+ 
+.container{
+ 
+    width:70%;
+ 
+    margin:40px auto;
+ 
+    background:white;
+ 
+    padding:30px;
+ 
+    border-radius:10px;
+ 
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+ 
+}
+ 
+ 
+/* Heading */
+ 
+h1{
+ 
+    text-align:center;
+ 
+    color:#2c3e50;
+ 
+}
+ 
+ 
+/* Form */
+ 
+form{
+ 
+    display:flex;
+ 
+    gap:10px;
+ 
+    margin-top:30px;
+ 
+}
+ 
+ 
+/* Input Box */
+ 
+input{
+ 
+    flex:1;
+ 
+    padding:12px;
+ 
+    font-size:16px;
+ 
+    border:1px solid #ccc;
+ 
+    border-radius:6px;
+ 
+}
+ 
+ 
+/* Button */
+ 
+button{
+ 
+    background:#007BFF;
+ 
+    color:white;
+ 
+    border:none;
+ 
+    padding:12px 20px;
+ 
+    border-radius:6px;
+ 
+    cursor:pointer;
+ 
+    font-size:16px;
+ 
+}
+ 
+ 
+button:hover{
+ 
+    background:#0056b3;
+ 
+}
+ 
+ 
+/* Result Boxes */
+ 
+.box{
+ 
+    margin-top:25px;
+ 
+    background:#eef5ff;
+ 
+    padding:20px;
+ 
+    border-radius:8px;
+ 
+    border-left:5px solid #007BFF;
+ 
+}
+ 
+ 
+/* Paragraph */
+ 
+p{
+ 
+    white-space:pre-wrap;
+ 
+    line-height:1.6;
+ 
+}

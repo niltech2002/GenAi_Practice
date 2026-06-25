@@ -1,0 +1,15 @@
+Generative AI creates new content such as text, images, code, and audio.
+ 
+Large Language Models (LLMs) are trained on massive amounts of text and generate human-like responses.
+ 
+Embeddings are numerical vector representations of text that capture semantic meaning.
+ 
+SentenceTransformer converts text into embeddings.
+ 
+ChromaDB stores embeddings and retrieves semantically similar documents.
+ 
+Retrieval-Augmented Generation (RAG) first retrieves relevant information from a vector database and then sends that information to an LLM.
+ 
+Prompt engineering improves the quality of responses by providing instructions, context, and constraints.
+ 
+REST APIs allow applications to communicate with LLM services using HTTP requests.
