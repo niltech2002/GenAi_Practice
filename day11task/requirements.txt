@@ -1,0 +1,43 @@
+# LangChain core
+langchain
+langchain-core
+langchain-community
+ 
+# Anthropic / Claude integration
+langchain-anthropic
+anthropic
+ 
+# Environment variable management
+python-dotenv
+ 
+# Agents & tools
+langchain-experimental
+duckduckgo-search
+wikipedia
+ 
+# RAG & vector stores
+langchain-chroma
+chromadb
+faiss-cpu
+tiktoken
+langchain_huggingface
+sentence-transformers
+ 
+# Document loaders & text splitting
+unstructured
+pypdf
+beautifulsoup4
+lxml
+ 
+# Embeddings
+sentence-transformers
+ 
+# Memory & caching
+redis
+ 
+# Output parsing & structured data
+pydantic
+ 
+ipykernel
+ 
+streamlit
