@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive Flask-powered calculator">
+    <title>Flask Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="calculator">
+
+        <!-- Display -->
+        <div class="display">
+            <div class="expression" id="expression">&nbsp;</div>
+            <div class="current" id="current">0</div>
+        </div>
+
+        <!-- Button Grid -->
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn btn-clear span2" id="clearBtn" aria-label="Clear">C</button>
+            <button class="btn btn-operator" data-op="/" aria-label="Divide">÷</button>
+            <button class="btn btn-operator" data-op="*" aria-label="Multiply">×</button>
+
+            <!-- Row 2 -->
+            <button class="btn btn-digit" data-val="7">7</button>
+            <button class="btn btn-digit" data-val="8">8</button>
+            <button class="btn btn-digit" data-val="9">9</button>
+            <button class="btn btn-operator" data-op="-" aria-label="Subtract">−</button>
+
+            <!-- Row 3 -->
+            <button class="btn btn-digit" data-val="4">4</button>
+            <button class="btn btn-digit" data-val="5">5</button>
+            <button class="btn btn-digit" data-val="6">6</button>
+            <button class="btn btn-operator" data-op="+" aria-label="Add">+</button>
+
+            <!-- Row 4: 1,2,3 + equals spans 2 rows -->
+            <button class="btn btn-digit" data-val="1">1</button>
+            <button class="btn btn-digit" data-val="2">2</button>
+            <button class="btn btn-digit" data-val="3">3</button>
+            <button class="btn btn-equals row-span2" id="equalsBtn" aria-label="Equals">=</button>
+
+            <!-- Row 5: 0 spans 2 cols + decimal -->
+            <button class="btn btn-digit span2" data-val="0">0</button>
+            <button class="btn btn-digit" data-val="." aria-label="Decimal">.</button>
+        </div>
+
+        <div class="error" id="error" role="alert"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
